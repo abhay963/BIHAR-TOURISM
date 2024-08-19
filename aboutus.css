@@ -1,0 +1,98 @@
+/* Basic reset */
+* {
+    margin: 20;
+    padding: 30;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: url('image/pexels-dharamveerkr-6307227.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    color: #fff;
+}
+
+header {
+    background:#ff6600;
+    padding: 10px 0;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: background 0.3s ease;
+}
+
+header nav ul li a:hover {
+    background: #ff6600;
+    border-radius: 5px;
+}
+
+.about-section {
+    background: rgba(35, 35, 35, 0.7);
+    padding: 50px;
+    margin: 50px auto;
+    max-width: 800px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    color: #ddd;
+}
+
+.about-section h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #ff6600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.about-section h2 {
+    font-size: 28px;
+    margin-top: 30px;
+    color: #ff6600;
+}
+
+.about-section p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.about-section span {
+    color: #ff6600;
+    font-weight: bold;
+}
+
+.about-section ul {
+    list-style: disc;
+    margin-left: 20px;
+    color: #bbb;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    font-size: 14px;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 0;
+}

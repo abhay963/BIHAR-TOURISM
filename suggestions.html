@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suggestions - Bihar Tourism</title>
+    <link rel="stylesheet" href="suggestion.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="most-visited.html">Most Visited Places</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="suggestions.html">Suggestions</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="suggestions-section">
+            <div class="form-container">
+                <h2>We'd Love to Hear From You</h2>
+                <p>Your feedback helps us improve our services. Please share your thoughts!</p>
+                <form id="suggestionForm" class="suggestion-form">
+                    <div class="input-group">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="input-group">
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="input-group">
+                        <textarea id="suggestion" name="suggestion" rows="5" placeholder="Your Suggestion" required></textarea>
+                    </div>
+                    <button type="submit">Submit Suggestion</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <div id="popupMessage" class="popup-message">
+        <p>Thank you for your suggestion!</p>
+        <button onclick="closePopup()">Close</button>
+    </div>
+    <footer>
+        <p>&copy; 2024 Bihar Tourism</p>
+    </footer>
+    <script src="suggestion.js"></script>
+</body>
+</html>

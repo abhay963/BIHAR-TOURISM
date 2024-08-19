@@ -1,0 +1,222 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-image: url('pexels-dharamveerkr-6307227.jpg');
+    background-size: auto;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background:transparent;
+  max-height: 30px;
+    color: #fff;
+    padding: 2rem 0;
+
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ff6347;
+}
+.p5{
+    display: flex;
+    text-indent: 30pc;
+}
+/* Slideshow Styles */
+.slideshow-container {
+    position: relative;
+    max-width: 100%;
+    margin: 2rem auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    
+}
+
+.mySlides {
+    display: none;
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    flex-shrink: 0;
+    border-radius: 10px;
+}
+
+@keyframes ripple {
+    0% {
+        transform: scale(0.8);
+        opacity: 0.5;
+    }
+    50% {
+        transform: scale(1.05);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.ripple {
+    animation: ripple 2s;
+}
+
+/* Info Container */
+.info-container {
+    width: 80%;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.info-container h2 {
+    margin-bottom: 1rem;
+    color: #2c3e50;
+    border-bottom: 2px solid #ff6347;
+    padding-bottom: 0.5rem;
+    font-family: 'Playfair Display', serif;
+}
+
+.info-container p {
+    margin-bottom: 1.5rem;
+    line-height: 1.8;
+    color: #555555;
+}
+
+.info-container a {
+    color: #ff6347;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.info-container a:hover {
+    text-decoration: underline;
+}
+
+.info-container p:first-letter {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ff6347;
+}
+
+/* Background Image Styling */
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('pexels-dharamveerkr-6307227.jpg');
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+.photo-gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.photo-gallery img {
+    width: calc(33.33% - 10px);
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.photo-gallery img:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Lightbox styles */
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.lightbox-content {
+    max-width: 80%;
+    max-height: 80%;
+    margin: auto;
+    display: block;
+}
+
+.lightbox .close {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.lightbox .close:hover {
+    color: #bbb;
+}
+
+#caption {
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+.photo-gallery {
+    display: flow-root;
+    flex-wrap: wrap-reverse;
+    gap: 10px;
+}
+
+.photo-gallery img {
+    width: auto;
+    height: fit-content;
+    border-radius: 15px;
+}
