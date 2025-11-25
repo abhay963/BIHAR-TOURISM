@@ -18,29 +18,6 @@ header {
     padding: 10px 0;
 }
 
-header nav ul {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-}
-
-header nav ul li {
-    margin: 0 15px;
-}
-
-header nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: bold;
-    padding: 10px 15px;
-    transition: background 0.3s ease;
-}
-
-header nav ul li a:hover {
-    background: #ff6600;
-    border-radius: 5px;
-}
 
 .about-section {
     background: rgba(35, 35, 35, 0.7);

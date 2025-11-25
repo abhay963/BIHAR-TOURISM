@@ -1,114 +1,169 @@
 <!DOCTYPE html>
-<html lang="en"> 
+<html lang="en">
 <head>
-    <style>
-        
-    </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title >Bihar Tourism</title>
+    <title>Bihar Tourism</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://fontawesome.com/search?q=home&o=r">
-    <link rel="stylesheet" href="css/styles.css"> 
-    <link rel="stylesheet" href="css/style.css"> 
-
-    
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="background-video">
-        <video style="width: 1450px;"   autoplay muted loop>
+        <video autoplay muted loop id="bg-video">
             <source src="image/BIHARTOURISM.mp4" type="video/mp4">
             Your browser does not support the video tag.
-        
         </video>
-        </div>
-      
-    
-    
-    <header >
-        
-                <h1 style = "color:rgb(224, 224, 224) ; "   ><b>Bihar Tourism</b></h1>
+    </div>
+    <div class="overlay"></div>
+
+    <header>
+        <h1>Bihar Tourism</h1>
         <nav>
+            <div class="menu-toggle">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
             <ul>
-                <li><a style = "color:rgb(237, 233, 233) ; "  href="index.html">Home  </a></li>
-                <li><a style = "color:rgb(245, 237, 237) ; "  href="about.html">About</a></li>
-                <li><a style = "color:rgb(248, 246, 246) ; " href="most-visited.html">Most Visited Places</a></li>
-                <li><a style = "color:rgb(249, 243, 243) ; "  href="contact.html">Contact Us</a></li>
-                <li><a style = "color:rgb(251, 248, 248) ; " href="suggestions.html">Suggestions</a> 
-                    </li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="most-visited.html">Most Visited Places</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="suggestions.html">Suggestions</a></li>
             </ul>
         </nav>
-        </nav>
-</header>
+    </header>
 
     <main>
-        <section>
-            
-            <h2 style="color: rgb(18, 19, 18);" > <u>  <marquee>Famous Places in Bihar</marquee>   </u> </h2>
-            <br>
-            <br>
-    
-            <div class="places">
-                <div  class="place">
-                    <img onclick="location.href='maamundeshwari.html'"  src="image/maamundeshwari2a.jpg"> 
-                    <button onclick="location.href='maamundeshwari.html'">MAA MUNDESHWARI TEMPLE</button>
-                </div>
-                <div class="place"> 
-                    <img onclick="location.href='jalmandir.html'"   src="image/jal mandir.jpeg">
-                    <button onclick="location.href='jalmandir.html'">JAL MANDIR</button>
-                </div>
-
-                <div class="place"> <img onclick="location.href='mahabodhi.html'"  src="image/Mahabodhi Temple.jpeg">
-                    <button onclick="location.href='mahabodhi.html'">MAHABODHI TEMPLE</button>
-                </div>
-                <div class="place"><img onclick="location.href='karkatgarh.html'"  src="image/KARAKATGARH Waterfall.jpeg">
-                    <button onclick="location.href='karkatgarh.html'"> KARAKATGARH WATERFALL</button>
-                </div>
-                <div class="place"> <img onclick="location.href='karamchat.html'"  style="margin-top: 25px; margin-left: 25px ;" src="image/karamchatdam.jpeg">
-                    <button style="margin-top: 40px;"  onclick="location.href='karamchat.html'">KARAMCHAT DAM</button>
-                </div>
-                
-                <div class="place"> <img onclick="location.href='telhar.html'" src="image/telhar waterfall.jpeg">
-                    <button onclick="location.href='telhar.html'">TELHAR KUND</button>
-                </div>
-            
-            
-                <div  class="place"> <img  style="margin-left: 65px;" onclick="location.href='mahavirmandir.html'" src="image/mahavirmandirpatna.jpeg">
-                    <button onclick="location.href='mahavirmandir.html'">MAHAVIR MANDIR PATNA</button>
-                </div>
-                <div class="place"> <img style="margin-top:30px" onclick="location.href='pilot.html'"  src="image/pilotbaba.jpeg">
-                    <button style="margin-top: 40px;" onclick="location.href='pilot.html';">PILOT BABA</button>
-            </div>
-            <div class="place"> <img style="margin-top:30px"  onclick="location.href='tarachandi.html'"  src="image/tarachandi mandir.jpeg">
-                <button style="margin-top:30px" onclick="location.href='tarachandi.html'">TARACHANDI MANDIR</button></div>
-        
-            <div class="place"> <img style="margin-top:30px ;  margin-left: 25px;" onclick="location.href='shershahtomb.html'" src="image/shershahtomb.jpeg">
-                <button style="margin-top:30px" onclick="location.href='shershahtomb.html'">SHERSHAH TOMB</button>
-            </div><div class="place"> <img  style=" margin-left: 50px;" onclick="location.href='tutla.html'" src="image/tutla bhawani.jpeg">
-                <button onclick="location.href='tutla.html'">TUTLA BHAWANI</button>
-            </div>
-            <div class="place"> <img style="margin-top: 25px;" onclick="location.href='golghar.html'"  src="image/golghar.jpeg">
-                <button  style="margin-top: 25px;" onclick="location.href='golghar.html'">GOL GHAR</button>
-            </div>
-            <div class="place"> <img onclick="location.href='nit.html'" src="image/nitghatpatna.jpeg">
-                <button onclick="location.href='nit.html'">NIT GHAT PATNA</button>
-            </div>
-            <div class="place"> <img onclick="location.href='madhubani.html'" src="image/MADHUBANI.jpeg">
-                <button onclick="location.href='madhubani.html'">MADHUBANI</button>
-            </div>
-            <div class="place"> <img onclick="location.href='valmiki.html'" src="image/VALMIKI NATIONAL PARK.jpeg">
-                <button onclick="location.href='valmiki.html'">VALMIKI NATIONAL PARK</button>
-            </div>
-            <div class="place"> <img onclick="location.href='nalanda.html'" src="image/NALANDA.jpeg">
-                <button onclick="location.href='nalanda.html'">NALANDA</button>
+        <section class="places-section">
+            <h2>Famous Places in Bihar</h2>
+            <div class="places-grid">
+                <a href="maamundeshwari.html" class="place-card">
+                    <img src="image/maamundeshwari2a.jpg" alt="Maa Mundeshwari Temple">
+                    <div class="place-card-content">
+                        <h3>MAA MUNDESHWARI TEMPLE</h3>
+                    </div>
+                </a>
+                <a href="jalmandir.html" class="place-card">
+                    <img src="image/jal mandir.jpeg" alt="Jal Mandir">
+                    <div class="place-card-content">
+                        <h3>JAL MANDIR</h3>
+                    </div>
+                </a>
+                <a href="mahabodhi.html" class="place-card">
+                    <img src="image/Mahabodhi Temple.jpeg" alt="Mahabodhi Temple">
+                    <div class="place-card-content">
+                        <h3>MAHABODHI TEMPLE</h3>
+                    </div>
+                </a>
+                <a href="karkatgarh.html" class="place-card">
+                    <img src="image/KARAKATGARH Waterfall.jpeg" alt="Karakatgarh Waterfall">
+                    <div class="place-card-content">
+                        <h3>KARAKATGARH WATERFALL</h3>
+                    </div>
+                </a>
+                <a href="karamchat.html" class="place-card">
+                    <img src="image/karamchatdam.jpeg" alt="Karamchat Dam">
+                    <div class="place-card-content">
+                        <h3>KARAMCHAT DAM</h3>
+                    </div>
+                </a>
+                <a href="telhar.html" class="place-card">
+                    <img src="image/telhar waterfall.jpeg" alt="Telhar Kund">
+                    <div class="place-card-content">
+                        <h3>TELHAR KUND</h3>
+                    </div>
+                </a>
+                <a href="mahavirmandir.html" class="place-card">
+                    <img src="image/mahavirmandirpatna.jpeg" alt="Mahavir Mandir Patna">
+                    <div class="place-card-content">
+                        <h3>MAHAVIR MANDIR PATNA</h3>
+                    </div>
+                </a>
+                <a href="pilot.html" class="place-card">
+                    <img src="image/pilotbaba.jpeg" alt="Pilot Baba">
+                    <div class="place-card-content">
+                        <h3>PILOT BABA</h3>
+                    </div>
+                </a>
+                <a href="tarachandi.html" class="place-card">
+                    <img src="image/tarachandi mandir.jpeg" alt="Tarachandi Mandir">
+                    <div class="place-card-content">
+                        <h3>TARACHANDI MANDIR</h3>
+                    </div>
+                </a>
+                <a href="shershahtomb.html" class="place-card">
+                    <img src="image/shershahtomb.jpeg" alt="Shershah Tomb">
+                    <div class="place-card-content">
+                        <h3>SHERSHAH TOMB</h3>
+                    </div>
+                </a>
+                <a href="tutla.html" class="place-card">
+                    <img src="image/tutla bhawani.jpeg" alt="Tutla Bhawani">
+                    <div class="place-card-content">
+                        <h3>TUTLA BHAWANI</h3>
+                    </div>
+                </a>
+                <a href="golghar.html" class="place-card">
+                    <img src="image/golghar.jpeg" alt="Gol Ghar">
+                    <div class="place-card-content">
+                        <h3>GOL GHAR</h3>
+                    </div>
+                </a>
+                <a href="nit.html" class="place-card">
+                    <img src="image/nitghatpatna.jpeg" alt="NIT Ghat Patna">
+                    <div class="place-card-content">
+                        <h3>NIT GHAT PATNA</h3>
+                    </div>
+                </a>
+                <a href="madhubani.html" class="place-card">
+                    <img src="image/MADHUBANI.jpeg" alt="Madhubani">
+                    <div class="place-card-content">
+                        <h3>MADHUBANI</h3>
+                    </div>
+                </a>
+                <a href="valmiki.html" class="place-card">
+                    <img src="image/VALMIKI NATIONAL PARK.jpeg" alt="Valmiki National Park">
+                    <div class="place-card-content">
+                        <h3>VALMIKI NATIONAL PARK</h3>
+                    </div>
+                </a>
+                <a href="nalanda.html" class="place-card">
+                    <img src="image/NALANDA.jpeg" alt="Nalanda">
+                    <div class="place-card-content">
+                        <h3>NALANDA</h3>
+                    </div>
+                </a>
             </div>
         </section>
     </main>
-    <footer>
-        <p>&copy; 2024 Bihar Tourism. All rights reserved.</p>
-    </footer>
+
+ <footer style="
+    width:100%;
+    padding:20px 0;
+    text-align:center;
+    font-family:'Poppins', sans-serif;
+    background:rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    color:white;
+    font-size:18px;
+    letter-spacing:1px;
+    border-top:1px solid rgba(255,255,255,0.3);
+    box-shadow:0 -4px 20px rgba(0,0,0,0.4);
+    position:relative;
+    margin-top:50px;
+">
+    <p style="
+        margin:0;
+        text-shadow:0 0 8px rgba(255,255,255,0.7);
+        animation: glow 2s infinite alternate;
+    ">
+        © 2024 Bihar Tourism. All rights reserved.
+    </p>
+</footer>
+
+    <script src="js/scripts.js"></script>
 </body>
 </html>

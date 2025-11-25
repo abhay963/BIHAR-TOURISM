@@ -3,97 +3,326 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Most Visited Places in Bihar</title>
-    <link rel="stylesheet" href="mostvisited.css">
+    <title>Most Visited Places in Bihar | Tourism Guide</title>
+ <link rel="stylesheet" href="mostvisited.css">
+    <style>
+        /* ---------- GLOBAL RESET AND TYPOGRAPHY ---------- */
+    body {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+
+    background: 
+        linear-gradient(135deg, rgba(26,26,26,0.6), rgba(59,59,59,0.6)),
+        url('image/pexels-dharamveerkr-6307227.jpg') no-repeat center center fixed;
+
+    background-size: cover;
+    color: white;
+    line-height: 1.6;
+}
+
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* ---------- HEADER & NAVIGATION (NORMAL - NO BACKGROUND) ---------- */
+     header {
+    background-color: transparent;
+    color: white;
+    padding: 1rem 0;
+    box-shadow: none;
+    z-index: 100;  /* can remain */
+}
+
+
+        header h1 {
+            font-size: 2rem;
+            margin: 0;
+            letter-spacing: 0.5px;
+            text-align: center;
+        }
+
+        /* The nav styling is handled by the user's inline styles (which use white color). */
+
+        /* ---------- MAIN CONTENT LAYOUT (NO BACKGROUND/COLOR) ---------- */
+        .places-section {
+            padding: 40px 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            
+            /* REMOVED all background, border, and shadow styles */
+            background-color: transparent;
+            box-shadow: none;
+            border-radius: 0;
+            margin: 40px auto;
+            max-width: 1200px;
+            border: none;
+        }
+
+        /* ---------- CONTENT CARDS (CLEAN & STRUCTURED) ---------- */
+        /* Cards still need a white background to make their internal text readable */
+        .place-container {
+            background-color: white;
+            color: #333; /* Dark text inside the white card */
+            border: 1px solid #dcdcdc;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3); /* Slightly stronger shadow for visibility on dark background */
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            overflow: hidden;
+        }
+
+        .place-container:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.45);
+        }
+
+        .place-container h2 {
+            color: #007bff;
+            font-size: 1.5rem;
+            margin-top: 0;
+            border-bottom: 2px solid #f0f0f0;
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+        }
+
+        .place-container img {
+            width: 100%;
+            height: 200px;
+            border-radius: 6px;
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
+
+        .place-container p strong {
+            color: #555;
+            display: block;
+            margin-top: 8px;
+        }
+
+        /* ---------- PDF DOWNLOAD BUTTON (ACCENTED) ---------- */
+        .pdf-download {
+            text-align: center;
+            padding: 40px 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.2); /* Light border for contrast */
+            margin-top: 40px;
+        }
+        
+        .pdf-download h3 {
+            color: white;
+        }
+
+        .download-btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background-color: #007bff;
+            color: white;
+            font-weight: 600;
+            border-radius: 5px;
+            text-decoration: none;
+            letter-spacing: 0.5px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            box-shadow: 0 4px 8px rgba(0, 123, 255, 0.3);
+        }
+
+        .download-btn:hover {
+            background-color: #0056b3;
+            transform: translateY(-2px);
+        }
+
+        /* ---------- FOOTER (CLEAN & SUBDUED) ---------- */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #343a40;
+            color: #f8f9fa;
+            font-size: 0.9rem;
+            margin-top: 0;
+        }
+    </style>
 </head>
+
 <body>
+
     <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="most-visited.html">Most Visited Places</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-                <li><a href="suggestions.html">Suggestions</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <h1>Bihar Tourism</h1>
+            
+            <nav>
+                <ul style="
+                    list-style:none;
+                    padding:0;
+                    margin:1rem 0 0 0;
+                    display:flex;
+                    justify-content:center;
+                    gap:2rem;
+                ">
+                    <li><a href="index.html" style="
+                        color:white;
+                        text-decoration:none;
+                        font-size:1.1rem;
+                        padding:0.5rem 1rem;
+                        border-radius:5px;
+                        transition:0.3s ease;
+                        display:inline-block;
+                    " onmouseover="this.style.backgroundColor='rgba(255,255,255,0.2)'"
+                       onmouseout="this.style.backgroundColor='transparent'">
+                        Home</a></li>
+
+                    <li><a href="about.html" style="
+                        color:white;
+                        text-decoration:none;
+                        font-size:1.1rem;
+                        padding:0.5rem 1rem;
+                        border-radius:5px;
+                        transition:0.3s ease;
+                        display:inline-block;
+                    " onmouseover="this.style.backgroundColor='rgba(255,255,255,0.2)'"
+                       onmouseout="this.style.backgroundColor='transparent'">
+                        About</a></li>
+
+                    <li><a href="most-visited.html" style="
+                        color:white;
+                        text-decoration:none;
+                        font-size:1.1rem;
+                        padding:0.5rem 1rem;
+                        border-radius:5px;
+                        transition:0.3s ease;
+                        display:inline-block;
+                    " onmouseover="this.style.backgroundColor='rgba(255,255,255,0.2)'"
+                       onmouseout="this.style.backgroundColor='transparent'">
+                        Most Visited Places</a></li>
+
+                    <li><a href="contact.html" style="
+                        color:white;
+                        text-decoration:none;
+                        font-size:1.1rem;
+                        padding:0.5rem 1rem;
+                        border-radius:5px;
+                        transition:0.3s ease;
+                        display:inline-block;
+                    " onmouseover="this.style.backgroundColor='rgba(255,255,255,0.2)'"
+                       onmouseout="this.style.backgroundColor='transparent'">
+                        Contact Us</a></li>
+
+                    <li><a href="suggestions.html" style="
+                        color:white;
+                        text-decoration:none;
+                        font-size:1.1rem;
+                        padding:0.5rem 1rem;
+                        border-radius:5px;
+                        transition:0.3s ease;
+                        display:inline-block;
+                    " onmouseover="this.style.backgroundColor='rgba(255,255,255,0.2)'"
+                       onmouseout="this.style.backgroundColor='transparent'">
+                        Suggestions</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <section class="places-section">
-        <div class="place-container">
-            <h2>Hanuman Mandir</h2>
-            <img src="image/hanuman mandir.avif" alt="Hanuman Mandir">
-            <p><strong>Details:</strong> A popular Hindu temple dedicated to Lord Hanuman in Patna.</p>
-            <p><strong>Visitor Reviews:</strong> "A spiritually uplifting experience!"</p>
-            <p><strong>Annual Visitors:</strong> 5,000,000</p>
-        </div>
+    <div class="container">
+        <section class="places-section">
+            <div class="place-container">
+                <h2>Hanuman Mandir</h2>
+                <img src="image/hanuman mandir.avif" alt="Hanuman Mandir">
+                <p><strong>Details:</strong> A popular Hindu temple dedicated to Lord Hanuman in Patna.</p>
+                <p><strong>Visitor Reviews:</strong> "A spiritually uplifting experience!"</p>
+                <p><strong>Annual Visitors:</strong> 5,000,000</p>
+            </div>
 
-        <div class="place-container">
-            <h2>Great Buddha Statue</h2>
-            <img src="image/buddha.jpg" alt="Great Buddha Statue">
-            <p><strong>Details:</strong> A monumental statue of Buddha located in Bodh Gaya.</p>
-            <p><strong>Visitor Reviews:</strong> "A serene and peaceful place, a must-visit!"</p>
-            <p><strong>Annual Visitors:</strong> 2,500,000</p>
-        </div>
+            <div class="place-container">
+                <h2>Great Buddha Statue</h2>
+                <img src="image/buddha.jpg" alt="Great Buddha Statue">
+                <p><strong>Details:</strong> A monumental statue of Buddha located in Bodh Gaya.</p>
+                <p><strong>Visitor Reviews:</strong> "A serene and peaceful place, a must-visit!"</p>
+                <p><strong>Annual Visitors:</strong> 2,500,000</p>
+            </div>
 
-        <div class="place-container">
-            <h2>Nalanda</h2>
-            <img src="image/nalanda.jpg" alt="Nalanda">
-            <p><strong>Details:</strong> Ancient center of learning, one of the oldest universities in the world.</p>
-            <p><strong>Visitor Reviews:</strong> "A glimpse into the rich history of education in India."</p>
-            <p><strong>Annual Visitors:</strong> 1,200,000</p>
-        </div>
+            <div class="place-container">
+                <h2>Nalanda University Ruins</h2>
+                <img src="image/nalanda.jpg" alt="Nalanda University Ruins">
+                <p><strong>Details:</strong> Ruins of the ancient Nalanda University, a UNESCO World Heritage Site.</p>
+                <p><strong>Visitor Reviews:</strong> "A must-visit for history buffs!"</p>
+                <p><strong>Annual Visitors:</strong> 1,000,000</p>
+            </div>
 
-        <div class="place-container">
-            <h2>Vishnupad Temple</h2>
-            <img src="image/vishnupad.jpg" alt="Vishnupad Temple">
-            <p><strong>Details:</strong> A sacred temple in Gaya dedicated to Lord Vishnu.</p>
-            <p><strong>Visitor Reviews:</strong> "A divine experience, the architecture is stunning."</p>
-            <p><strong>Annual Visitors:</strong> 3,000,000</p>
-        </div>
+            <div class="place-container">
+                <h2>Vishnupad Temple</h2>
+                <img src="image/vishnupad.jpg" alt="Vishnupad Temple">
+                <p><strong>Details:</strong> A sacred temple in Gaya dedicated to Lord Vishnu.</p>
+                <p><strong>Visitor Reviews:</strong> "A divine experience, the architecture is stunning."</p>
+                <p><strong>Annual Visitors:</strong> 3,000,000</p>
+            </div>
 
-        <div class="place-container">
-            <h2>Pind Daan Gaya</h2>
-            <img src="image/pindaan.jpg" alt="Pind Daan Gaya">
-            <p><strong>Details:</strong> A sacred Hindu ritual site in Gaya.</p>
-            <p><strong>Visitor Reviews:</strong> "A place of immense spiritual significance."</p>
-            <p><strong>Annual Visitors:</strong> 1,500,000</p>
-        </div>
+            <div class="place-container">
+                <h2>Pind Daan Gaya</h2>
+                <img src="image/pindaan.jpg" alt="Pind Daan Gaya">
+                <p><strong>Details:</strong> A sacred Hindu ritual site in Gaya.</p>
+                <p><strong>Visitor Reviews:</strong> "A place of immense spiritual significance."</p>
+                <p><strong>Annual Visitors:</strong> 1,500,000</p>
+            </div>
 
-        <div class="place-container">
-            <h2>Jim Corbett National Park</h2>
-            <img src="image/jim1.webp" alt="Jim Corbett National Park">
-            <p><strong>Details:</strong> A beautiful national park, home to Bengal tigers.</p>
-            <p><strong>Visitor Reviews:</strong> "A wildlife enthusiast's paradise!"</p>
-            <p><strong>Annual Visitors:</strong> 2,000,000</p>
-        </div>
+            <div class="place-container">
+                <h2>Eco Park (Rajdhani Vatika)</h2>
+                <img src="image/eco-park-rajdhani-vatika (1).jpg" alt="Eco Park">
+                <p><strong>Details:</strong> A beautiful green park in Patna, ideal for a relaxing day out.</p>
+                <p><strong>Visitor Reviews:</strong> "A peaceful escape within the city!"</p>
+                <p><strong>Annual Visitors:</strong> 1,500,000</p>
+            </div>
+            
+            <div class="place-container">
+                <h2>Mahabodhi Temple</h2>
+                <img src="image/mahabodhii.jpeg" alt="Mahabodhi Temple">
+                <p><strong>Details:</strong> A UNESCO World Heritage Site in Bodh Gaya, marking the spot where Buddha attained enlightenment.</p>
+                <p><strong>Visitor Reviews:</strong> "An incredibly significant historical and religious site."</p>
+                <p><strong>Annual Visitors:</strong> 2,800,000</p>
+            </div>
+            
+             <div class="place-container">
+                <h2>Patna Sahib Gurudwara</h2>
+                <img src="image/patna sahib.jpg" alt="Patna Sahib Gurudwara">
+                <p><strong>Details:</strong> Birthplace of Guru Gobind Singh, the tenth Sikh Guru, a site of immense importance for Sikhs.</p>
+                <p><strong>Visitor Reviews:</strong> "A beautiful and serene place of worship."</p>
+                <p><strong>Annual Visitors:</strong> 1,800,000</p>
+            </div>
 
-        <div class="place-container">
-            <h2>Nalanda University Ruins</h2>
-            <img src="image/nalanda.jpg" alt="Nalanda University Ruins">
-            <p><strong>Details:</strong> Ruins of the ancient Nalanda University, a UNESCO World Heritage Site.</p>
-            <p><strong>Visitor Reviews:</strong> "A must-visit for history buffs!"</p>
-            <p><strong>Annual Visitors:</strong> 1,000,000</p>
-        </div>
+        </section>
 
-        <div class="place-container">
-            <h2>Eco Park (Rajdhani Vatika)</h2>
-            <img src="image/eco-park-rajdhani-vatika (1).jpg" alt="Eco Park">
-            <p><strong>Details:</strong> A beautiful green park in Patna, ideal for a relaxing day out.</p>
-            <p><strong>Visitor Reviews:</strong> "A peaceful escape within the city!"</p>
-            <p><strong>Annual Visitors:</strong> 1,500,000</p>
-        </div>
-    </section>
+        <section class="pdf-download">
+            <h3>Download the Official Tourism Guide</h3>
+            <a href="image/tourist_attractions_of_bihar_english_2020.pdf" download class="download-btn">Download PDF Report</a>
+        </section>
+    </div>
 
-    <section class="pdf-download">
-        <h3>Download the PDF for More Information</h3>
-        <a href="image/tourist_attractions_of_bihar_english_2020.pdf" download class="download-btn">Download PDF</a>
-    </section>
+    <footer style="
+    width:100%;
+    padding:20px 0;
+    text-align:center;
+    font-family:'Poppins', sans-serif;
+    background:rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    color:white;
+    font-size:18px;
+    letter-spacing:1px;
+    border-top:1px solid rgba(255,255,255,0.3);
+    box-shadow:0 -4px 20px rgba(0,0,0,0.4);
+    position:relative;
+    margin-top:50px;
+">
+    <p style="
+        margin:0;
+        text-shadow:0 0 8px rgba(255,255,255,0.7);
+        animation: glow 2s infinite alternate;
+    ">
+        © 2024 Bihar Tourism. All rights reserved.
+    </p>
+</footer>
 
-    <footer>
-        <p>&copy; 2024 Bihar Tourism. All Rights Reserved.</p>
-    </footer>
-
-    <script src="scripts.js"></script>
 </body>
 </html>

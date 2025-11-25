@@ -8,20 +8,100 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="contact.css">
 </head>
-<body>
-    <header>
-        <h1>Bihar Tourism</h1>
+<body style="margin:0; padding:0;">
+
+    <!-- ================= NAVBAR (100% SAME AS INDEX) ================= -->
+    <header style="
+        color:white;
+        text-align:center;
+        padding:2rem 0;
+        background:transparent;
+        position:relative;
+        z-index:5;
+    ">
+        <h1 style="
+            font-family:'Kanit', sans-serif;
+            font-size:3rem;
+            margin:0;
+            font-weight:700;
+            letter-spacing:2px;
+        ">
+            Bihar Tourism
+        </h1>
+
         <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="most-visited.html">Most Visited Places</a></li>
-            
-                <li><a href="contact.html">Contact Us</a></li>
-                <li><a href="suggestions.html">Suggestion</a></li>
+            <ul style="
+                list-style:none;
+                padding:0;
+                margin:1rem 0 0 0;
+                display:flex;
+                justify-content:center;
+                gap:2rem;
+            ">
+                <!-- HOVER EFFECT ADDED EXACTLY LIKE INDEX -->
+                <li><a href="index.html" style="
+                    color:white;
+                    text-decoration:none;
+                    font-size:1.1rem;
+                    padding:0.5rem 1rem;
+                    border-radius:5px;
+                    transition:0.3s ease;
+                    display:inline-block;
+                " onmouseover="this.style.backgroundColor='rgba(255,255,255,0.2)'"
+                   onmouseout="this.style.backgroundColor='transparent'">
+                   Home</a></li>
+
+                <li><a href="about.html" style="
+                    color:white;
+                    text-decoration:none;
+                    font-size:1.1rem;
+                    padding:0.5rem 1rem;
+                    border-radius:5px;
+                    transition:0.3s ease;
+                    display:inline-block;
+                " onmouseover="this.style.backgroundColor='rgba(255,255,255,0.2)'"
+                   onmouseout="this.style.backgroundColor='transparent'">
+                   About</a></li>
+
+                <li><a href="most-visited.html" style="
+                    color:white;
+                    text-decoration:none;
+                    font-size:1.1rem;
+                    padding:0.5rem 1rem;
+                    border-radius:5px;
+                    transition:0.3s ease;
+                    display:inline-block;
+                " onmouseover="this.style.backgroundColor='rgba(255,255,255,0.2)'"
+                   onmouseout="this.style.backgroundColor='transparent'">
+                   Most Visited Places</a></li>
+
+                <li><a href="contact.html" style="
+                    color:white;
+                    text-decoration:none;
+                    font-size:1.1rem;
+                    padding:0.5rem 1rem;
+                    border-radius:5px;
+                    transition:0.3s ease;
+                    display:inline-block;
+                " onmouseover="this.style.backgroundColor='rgba(255,255,255,0.2)'"
+                   onmouseout="this.style.backgroundColor='transparent'">
+                   Contact Us</a></li>
+
+                <li><a href="suggestions.html" style="
+                    color:white;
+                    text-decoration:none;
+                    font-size:1.1rem;
+                    padding:0.5rem 1rem;
+                    border-radius:5px;
+                    transition:0.3s ease;
+                    display:inline-block;
+                " onmouseover="this.style.backgroundColor='rgba(255,255,255,0.2)'"
+                   onmouseout="this.style.backgroundColor='transparent'">
+                   Suggestions</a></li>
             </ul>
         </nav>
     </header>
+    <!-- ================= END NAVBAR ================= -->
 
     <section class="contact-section">
         <div class="admin-container">
@@ -51,8 +131,29 @@
         </div>
     </section>
 
-    <footer>
-        <p>&copy; 2024 Bihar Tourism. All Rights Reserved.</p>
-    </footer>
+     <footer style="
+    width:100%;
+    padding:20px 0;
+    text-align:center;
+    font-family:'Poppins', sans-serif;
+    background:rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    color:white;
+    font-size:18px;
+    letter-spacing:1px;
+    border-top:1px solid rgba(255,255,255,0.3);
+    box-shadow:0 -4px 20px rgba(0,0,0,0.4);
+    position:relative;
+    margin-top:50px;
+">
+    <p style="
+        margin:0;
+        text-shadow:0 0 8px rgba(255,255,255,0.7);
+        animation: glow 2s infinite alternate;
+    ">
+        © 2024 Bihar Tourism. All rights reserved.
+    </p>
+</footer>
 </body>
 </html>
