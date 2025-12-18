@@ -8,26 +8,13 @@
 [<img src="https://media.giphy.com/media/xUPGcguWZHRC2HyBRS/giphy.gif" width="420"/>](https://media.giphy.com/media/l3vRfNA1p0rvhMSvS/giphy.gif
 )
 
-🌿 Nature & Travel Vibes
-<img src="https://media.giphy.com/media/xUPGcguWZHRC2HyBRS/giphy.gif" width="420" />
+<p align="center">
+  <img 
+    src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExM3h6Znd4ZzR6NHR6NHR6NHR6NHR6NHR6NHR6NHR6NHR6NHR6NHR6JmVwPXYxX2ludGVybmFsX2dpZl9ieV9pZCZjdD1n/3o7TKMGpxxSAtYwzS0/giphy.gif" 
+    width="420" 
+  />
+</p>
 
-
-👉 Matches eco-tourism & scenic beauty
-
-✈️ Travel Adventure Feel
-<img src="https://media.giphy.com/media/3o7btPCcdNniyf0ArS/giphy.gif" width="420" />
-
-
-👉 Good for trip planning / destinations
-
-🛕 Cultural / Heritage Friendly (Best for Bihar Tourism)
-<img src="https://media.giphy.com/media/l0MYt5jPR6QX5pnqM/giphy.gif" width="420" />
-
-
-👉 Subtle, calm — suits heritage & culture
-
-✅ BEST PICK for Bihar Tourism (Final Recommendation)
-<img src="https://media.giphy.com/media/l0HlBO7eyXzSZkJri/giphy.gif" width="420" />
 
 
 If you want:
