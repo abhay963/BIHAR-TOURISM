@@ -5,12 +5,37 @@
 ### 🌏 Explore the Land of History & Culture  
 ### 🛕 Heritage | 🌿 Nature | 🎨 Culture
 
-<img src="https://media.giphy.com/media/xUPGcguWZHRC2HyBRS/giphy.gif" width="420"/>
+[<img src="https://media.giphy.com/media/xUPGcguWZHRC2HyBRS/giphy.gif" width="420"/>](https://media.giphy.com/media/l3vRfNA1p0rvhMSvS/giphy.gif
+)
+
+https://media.giphy.com/media/l0HlBO7eyXzSZkJri/giphy.gif
+<img src="https://media.giphy.com/media/3o7btPCcdNniyf0ArS/giphy.gif" width="420" />
+🎥 Animation Option 2
+html
+Copy code
+<img src="https://media.giphy.com/media/xT9IgzoKnwFNmISR8I/giphy.gif" width="420" />
+✅ Tip (Best Practice for README)
+If you want it centered (recommended):
+
+html
+Copy code
+<p align="center">
+  <img src="https://media.giphy.com/media/3o7btPCcdNniyf0ArS/giphy.gif" width="420" />
+</p>
+or
+
+html
+Copy code
+<p align="center">
+  <img src="https://media.giphy.com/media/xT9IgzoKnwFNmISR8I/giphy.gif" width="420" />
+</p>
+<img src="https://media.giphy.com/media/l0HlBO7eyXzSZkJri/giphy.gif" width="420"/>
+
 
 ---
 
 🔴 **LIVE DEMO**  
-👉 https://your-bihar-tourism-link.com
+👉 [https://your-bihar-tourism-link.com](https://abhay963.github.io/BIHAR-TOURISM/)
 
 ![Status](https://img.shields.io/badge/Status-Active-success?style=for-the-badge)
 ![Frontend](https://img.shields.io/badge/Frontend-HTML%20%7C%20CSS%20%7C%20JavaScript-blue?style=for-the-badge)
