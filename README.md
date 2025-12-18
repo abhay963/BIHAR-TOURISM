@@ -8,30 +8,29 @@
 [<img src="https://media.giphy.com/media/xUPGcguWZHRC2HyBRS/giphy.gif" width="420"/>](https://media.giphy.com/media/l3vRfNA1p0rvhMSvS/giphy.gif
 )
 
-https://media.giphy.com/media/l0HlBO7eyXzSZkJri/giphy.gif
+🌿 Nature & Travel Vibes
+<img src="https://media.giphy.com/media/xUPGcguWZHRC2HyBRS/giphy.gif" width="420" />
+
+
+👉 Matches eco-tourism & scenic beauty
+
+✈️ Travel Adventure Feel
 <img src="https://media.giphy.com/media/3o7btPCcdNniyf0ArS/giphy.gif" width="420" />
-🎥 Animation Option 2
-html
-Copy code
-<img src="https://media.giphy.com/media/xT9IgzoKnwFNmISR8I/giphy.gif" width="420" />
-✅ Tip (Best Practice for README)
-If you want it centered (recommended):
-
-html
-Copy code
-<p align="center">
-  <img src="https://media.giphy.com/media/3o7btPCcdNniyf0ArS/giphy.gif" width="420" />
-</p>
-or
-
-html
-Copy code
-<p align="center">
-  <img src="https://media.giphy.com/media/xT9IgzoKnwFNmISR8I/giphy.gif" width="420" />
-</p>
-<img src="https://media.giphy.com/media/l0HlBO7eyXzSZkJri/giphy.gif" width="420"/>
 
 
+👉 Good for trip planning / destinations
+
+🛕 Cultural / Heritage Friendly (Best for Bihar Tourism)
+<img src="https://media.giphy.com/media/l0MYt5jPR6QX5pnqM/giphy.gif" width="420" />
+
+
+👉 Subtle, calm — suits heritage & culture
+
+✅ BEST PICK for Bihar Tourism (Final Recommendation)
+<img src="https://media.giphy.com/media/l0HlBO7eyXzSZkJri/giphy.gif" width="420" />
+
+
+If you want:
 ---
 
 🔴 **LIVE DEMO**  
