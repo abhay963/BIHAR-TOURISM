@@ -8,12 +8,6 @@
 [<img src="https://media.giphy.com/media/xUPGcguWZHRC2HyBRS/giphy.gif" width="420"/>](https://media.giphy.com/media/l3vRfNA1p0rvhMSvS/giphy.gif
 )
 
-<p align="center">
-  <img 
-    src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExM3h6Znd4ZzR6NHR6NHR6NHR6NHR6NHR6NHR6NHR6NHR6NHR6NHR6JmVwPXYxX2ludGVybmFsX2dpZl9ieV9pZCZjdD1n/3o7TKMGpxxSAtYwzS0/giphy.gif" 
-    width="420" 
-  />
-</p>
 
 
 
